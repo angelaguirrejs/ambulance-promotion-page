@@ -1,0 +1,116 @@
+//Google font
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+//Navigation area
+
+.head__custom-nav{
+    .navbar-branf{
+        img{
+            width: 18px;
+            height: 18px;
+        }
+
+        span {
+            font-weight: 600;
+            font-size: 22px;
+            margin-left: 10px;
+        }
+        
+    }
+
+    button {
+        padding: 0;
+        span {
+            img{
+                width: 45px;
+            }
+        }
+    }
+
+    #navbarNav {
+        .navbar-nav{
+            .nav-item{
+                .nav-link {
+                    color: #000;
+                    font-weight: 400;
+                    padding: 8px 15px;
+                    white-space: nowrap;
+                    transition: .5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+                    &:hover{
+                        color: lightgreen;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Section
+
+.custom-section {
+    width: inherit;
+    padding: 40px 0;
+
+    @media screen and (width: 991.98px) {
+        flex-direction: column-reverse;
+    }
+
+    .col-lg-4{
+        margin-top: 10rem;
+        h2 {
+            font-weight: 700;
+            font-size: 50px;
+            color: #000;
+            margin-bottom: 0;
+            line-height: 1;
+            white-space: nowrap;
+        }
+
+        p{
+            color: #000;
+            margin-top: 1rem;
+        }
+
+        a {
+            display: inline-block;
+            padding: 13px 25px;
+            color: #ffff;
+            background-color: #1ea5f7;
+            border: 1px solid transparent;
+            margin-top: 2rem;
+            text-decoration: none;
+            transition: .5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+
+            &:hover {
+                color: #1ea5f7;
+                background-color: #ffff;
+                border: 1px solid #1ea5f7;
+            }
+        }
+
+    }
+}
+
+.col-lg-8 {
+    margin-top: 10rem;
+    img{
+        width: 100%;
+        position: absolute;
+        top: -4rem;
+        right: -11%;
+
+        @media screen and (max-width: 991.98px) {
+            width: 100%;
+            position: relative;
+            top: 0;
+            right: 0;
+        }
+    }
+}

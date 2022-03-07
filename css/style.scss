@@ -1,9 +1,38 @@
 //Google font
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
 
 body{
     font-family: 'Open Sans', sans-serif;
+}
+//Whatsapp button
+
+.btn-wsp{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background-color: #0DF053;
+    color: #FFFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 2rem;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    transition: .5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+    &:hover{
+        text-decoration: none;
+        color: #0DF053;
+        background-color: #FFFF;
+        transition: .5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    }
 }
 
 //Navigation area
@@ -43,7 +72,7 @@ body{
                     transition: .5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 
                     &:hover{
-                        color: lightgreen;
+                        opacity: .9;
                     }
                 }
             }
@@ -83,6 +112,7 @@ body{
             color: #ffff;
             background-color: #1ea5f7;
             border: 1px solid transparent;
+            border-radius: 1.5rem;
             margin-top: 2rem;
             text-decoration: none;
             transition: .5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -113,4 +143,35 @@ body{
             right: 0;
         }
     }
+}
+
+
+#about-us,
+#services,
+#contact{
+    margin-top: 6rem;
+    
+    h2{
+        font-weight: bold;
+    }
+
+}
+
+#image-about-us{
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+#info-sch{
+    font-weight: 700;
+    font-style: italic;
+}
+
+footer{
+    background-color: #000;
+}
+
+#copy{
+    border-top: 1px solid #FFF;
+    
 }
